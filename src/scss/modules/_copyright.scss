@@ -1,0 +1,37 @@
+$copyright-background: #EFEFEF;
+$copyright-text-color: #828282;
+
+.copyright {
+  background: $copyright-background;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 0;
+
+    @include small-laptop {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__text {
+    @include small-laptop {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text,
+  &__link {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    color: $copyright-text-color;
+
+    @include small-laptop {
+      text-align: center;
+    }
+  }
+}

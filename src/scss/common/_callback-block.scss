@@ -1,0 +1,21 @@
+.callback-block {
+  display: flex;
+  align-items: center;
+
+  &__tel-number {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    color: $link-text-color;
+    margin-right: 4rem;
+
+    @include laptop-l {
+      margin-right: 2rem;
+    }
+  }
+
+  &__callback-button {
+    border-color: $primary1 !important;
+    background: $primary2;
+  }
+}

@@ -1,0 +1,26 @@
+.header-navigation-bottom {
+  background: $primary2;
+
+  &__link {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $link-text-color;
+    font-weight: 400;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 0;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+}

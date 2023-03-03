@@ -1,0 +1,21 @@
+.special-products {
+  background: $primary3;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &__image{
+    width: 18.8rem;
+    height: 6rem;
+  }
+  &__wrapper {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+
+  &__title {
+    margin-top: 2rem;
+  }
+}

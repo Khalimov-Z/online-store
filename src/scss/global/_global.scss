@@ -1,0 +1,50 @@
+html {
+  font-size: 10px;
+  line-height: 10px;
+  color: $title-text-color;
+
+  @include tablet {
+    font-size: 8px;
+    line-height: 8px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link-text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+section,
+header,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: $wrapper-width;
+
+  @include laptop-l {
+    $wrapper-width: 80%;
+    width: $wrapper-width;
+  }
+
+  @include small-laptop {
+    $wrapper-width: 90%;
+    width: $wrapper-width;
+  }
+}
